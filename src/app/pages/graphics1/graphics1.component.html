@@ -1,0 +1,46 @@
+<div class="row">
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center">{{ graphics.graphic1.legend }}</h5>
+        <div style="display: block">
+            <app-graphic-doughnut [pieChartLabels]="graphics.graphic1.labels" [pieChartData]="graphics.graphic1.data" [pieChartType]="graphics.graphic1.type"></app-graphic-doughnut>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ graphics.graphic2.legend }}</h5>
+          <div style="display: block">
+              <app-graphic-doughnut [pieChartLabels]="graphics.graphic2.labels" [pieChartData]="graphics.graphic2.data" [pieChartType]="graphics.graphic2.type"></app-graphic-doughnut>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">{{ graphics.graphic3.legend }}</h5>
+            <div style="display: block">
+                <app-graphic-doughnut [pieChartLabels]="graphics.graphic3.labels" [pieChartData]="graphics.graphic3.data" [pieChartType]="graphics.graphic3.type"></app-graphic-doughnut>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{ graphics.graphic4.legend }}</h5>
+              <div style="display: block">
+                  <app-graphic-doughnut [pieChartLabels]="graphics.graphic4.labels" [pieChartData]="graphics.graphic4.data" [pieChartType]="graphics.graphic4.type"></app-graphic-doughnut>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>

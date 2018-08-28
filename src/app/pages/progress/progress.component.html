@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Progress</h4>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" [style.width]="percent1 + '%'"
+                    [attr.ariaValuenow]="percent1"
+                    aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100">Progress</div>
+                </div>
+                <br>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" [style.width]="percent2 + '%'"
+                    [attr.ariaValuenow]="percent2"
+                    aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100">Progress</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementer 
+                legend="Progress purple"
+                [percent]="percent1"
+                (changeValueProgress)="percent1 = $event"></app-incrementer>  
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementer 
+                legend="Progress green"
+                [percent]="percent2"
+                (changeValueProgress)="percent2 = $event"></app-incrementer>  
+            </div>
+        </div>
+    </div>
+</div>

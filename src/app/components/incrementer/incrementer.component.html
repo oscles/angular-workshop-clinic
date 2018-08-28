@@ -1,0 +1,19 @@
+<h4 class="card-title">{{ legend }} - {{ percent }} </h4>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <button class="btn btn-outline-secondary" type="button" 
+      (click)="changeValue(-5)">-</button>
+    </div>
+
+    <input type="number" 
+    class="form-control"
+    #txtProgress
+   [(ngModel)]="percent"
+   (ngModelChange)="onChanges($event)"
+    min="0" max="100">
+
+    <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="button"
+        (click)="changeValue(+5)">+</button>
+      </div>
+  </div>
