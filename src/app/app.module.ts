@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // modules
 import { PageIndexModule } from './pages/pageindex.module';
@@ -12,9 +13,6 @@ import { AppRoutesModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { FormsModule } from '@angular/forms';
-
-
 
 
 @NgModule({
@@ -28,9 +26,10 @@ import { FormsModule } from '@angular/forms';
     PageIndexModule,
     AppRoutesModule,
     ServiceModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
